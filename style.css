@@ -1,0 +1,736 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+#root{
+    margin: 0 7em;
+}
+
+#root nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+#root nav .logo h1{
+    font-variant: small-caps;
+}
+
+#root nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0 0.7em
+}
+
+#root nav ul li a{
+    color: #fff;
+    font-size: 0.8em;
+}
+
+#root nav ul li a:hover, #root nav ul li a.active{
+    border-bottom: 1px solid gold;
+    color: gold;
+    transition: 0.3s color ease-in;
+}
+
+main .home{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .home p{
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.5em;
+}
+
+main .home h1{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+main .home h1 a{
+    margin: 0 0em;
+    color: gold;
+}
+
+main .home h2{
+    color: gold;
+    font-size: 3em;
+}
+
+main .home .img{
+    /* margin: 0 9em; */
+    /* width: 80%; */
+    height: 100%;
+    background-image: url('./Images/IMG-20240523-WA0003-removebg-preview.png');
+    background-position: center;
+    background-size: cover;
+}
+
+main .home .btn a{
+    padding: 0.9em 1em;
+    background-color: gold;
+    border-radius: 2em;
+    color: #fff;
+}
+
+main .home .btn .trans, main .home .btn a:hover{
+    background: transparent;
+    color: #fff;
+    /* display: none; */
+    border: 1px solid #fff;
+    transition: 0.4s background ease-in;
+}
+
+main .home .btn .trans:hover{
+    background-color: gold;
+    color: #fff;
+    border: none;
+}
+
+main .about{
+    display: flex;
+    margin: 3em 0;
+}
+
+main .about .img_box{
+    background-image: url('./Images/IMG-20240523-WA0003-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    min-width: 40%;
+}
+
+.display{
+    display: flex;
+}
+
+main .about .txt_box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.2em;
+}
+
+main .about .txt_box h1{
+    text-align: center;
+    margin: 0.9em 0.3em;
+}
+
+main .about .txt_box p{
+    color: #bbb3b3;
+}
+
+main .about .cv{
+    display: flex;
+    flex-direction: column;
+}
+
+main .about .cv b{
+    display: flex;
+    margin: 0.4em 0;
+}
+main .about .cv b h5{
+    flex-basis: 12%;
+}
+
+main .about .cv b p{
+    font-weight: lighter;
+    margin: 0 8em;
+    font-size: 0.8em;
+}
+
+main .about p, main .about p.project{
+    margin: 1.2em 0;
+    color: #fff;
+}
+
+main .about p span{
+    color: gold;
+    font-weight: bolder;
+}
+
+main .about .pro_btn{
+    padding: 1em 1.4em;
+    background-color: gold;
+    border-radius: 2em;
+    color: #000;
+}
+
+/* Resume */
+.resume{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+.resume .header h1, .resume .header p{
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+}
+
+.resume .header p{
+    color: rgb(126, 123, 123);
+    font-size: 0.9em;
+    width: 80%;
+    margin: auto;
+}
+
+.resume .body{
+    display: flex;
+    gap: 0.9em;
+    margin: 0.9em 0;
+}
+
+.resume .body .column{
+    background-color: rgb(44, 44, 44);
+    padding: 1em 0;
+    border-radius: 0.5em;
+    width: 100%;
+}
+
+.resume .body .column p{
+    margin: 0.2em 0.8em;
+}
+
+.resume .body .column h1{
+    color: gold;
+    margin: 0.2em 0.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.resume .body .head_txt{
+    font-size: 1.2em;
+    margin: 0 0.5em;
+}
+
+.resume .body p.small{
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    margin: 1em;
+    color: rgba(223, 215, 215, 0.712);
+}
+
+.resume .body .last{
+    font-size: 0.9em;
+    color: rgba(223, 215, 215, 0.712);
+    margin: 2em;
+} 
+
+.resume .btn {
+    text-align: center;
+    color: #000;
+    /* padding: 1em 2em; */
+    /* background-color: gold; */
+}
+
+.resume .btn a{
+    background-color: gold;
+    padding: 0.9em 2em;
+    margin: 1em 0;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    color: #000;
+    border-radius: 2em;
+}
+
+
+/* Services */
+.services {
+    margin: 7em 0;
+}
+
+.services header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.services header h1{
+    margin: 1em 0;
+    font-size: 2em;
+    border-bottom: 1px solid gold;
+    padding-bottom: 10px;
+}
+
+.services header p{
+    color: rgb(195, 193, 193);
+    width: 90%;
+    text-align: center;
+}
+
+.services .body_carrier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.9em;
+    margin: 1em 0;
+}
+
+.services .body_carrier .body{
+    width: 90%;
+    background-color: rgb(44, 44, 44);
+    height: auto;
+    padding: 1em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.services .body_carrier .body i{
+    color: gold;
+    font-size: 3em;
+    margin: 0em 0 1em 0;
+}
+
+.services .body_carrier .body h3{
+    font-size: 1em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+}
+
+.services .body_carrier .body hr{
+    width: 20%;
+    margin: auto;
+    margin-top: 1em;
+    border: 1px solid gold;
+}
+
+
+/* my_skills */
+
+.my_skills{
+    padding: 3em 0;
+  }
+  
+  .my_skills header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+  
+  .my_skills header h1{
+    font-size: 3em;
+    text-transform: capitalize;
+  }
+  
+  .my_skills header p{
+    font-size: 1em;
+    margin: 1.2em 0;
+    width: 90%;
+    text-align: center;
+    line-height: 1;
+    color: gray;
+  }
+  
+  .my_skills .my_skills-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .my_skills .my_skills-inner section{
+    flex-basis: 45%;
+    margin-bottom: 1.5em;
+  }
+  
+  .my_skills .my_skills-inner section div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4em;
+  }
+  
+  .my_skills .my_skills-inner .container{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.292);
+    /* padding: 1px; */
+    border-radius: 100px;
+  }
+  
+  .coreldraw_percentage-ratings{
+    width: 70%;
+  }
+  .MS_PowerPoint_percentage-ratings{
+    width: 85%;
+  }
+  .html5_percentage-ratings{
+    width: 95%;
+  }
+  .css3_percentage-ratings{
+    width: 90%;
+  }
+  .adj_percentage-ratings{
+    width: 90%;
+  }
+  
+  .my_skills .my_skills-inner div:nth-child(2) > div{
+    background-color: gold;
+    padding: 3px;
+    border-radius: 100px;
+  }
+  
+  .my_skills .my_skills-inner .photoshop{
+    width: 90%;
+  }
+  
+  .my_skills .my_skills-inner .jquery{
+    width: 85%;
+  }
+  
+  .my_skills .my_skills-inner .html5{
+    width: 95%;
+  }
+  
+  .my_skills .my_skills-inner .css3{
+    width: 90%;
+  }
+  
+  .my_skills .my_skills-inner .wordpress{
+    width: 70%;
+  }
+  
+  .my_skills .my_skills-inner .seo{
+    width: 80%;
+  }
+/* projects */
+
+.projects header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects header h1{
+    margin: 1em 0;
+}
+
+.projects header p{
+    color: rgba(192, 192, 192, 0.473);
+    margin: 0.9em 0;
+}
+
+.projects__images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.project_images{
+    /* width: 300px; */
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: 0 0 1em rgba(179, 178, 178, 0.548); */
+}
+
+.project-images-1{
+    background-image: url('./Images/blog1.png');
+}
+.project-images-2{
+    background-image: url('./Images/blog2.png');
+}
+.project-images-3{
+    background-image: url('./Images/blog3.png');
+}
+.project-images-4{
+    background-image: url('./Images/blog4.png');
+}
+.project-images-5{
+    background-image: url('./Images/m-blog-1.jpg');
+}
+.project-images-6{
+    background-image: url('./Images/m-blog-2.jpg');
+}
+
+.pro1, .pro4, .pro6{
+    width: 30%;
+}
+
+.pro2, .pro3, .pro5{
+    width: 65%;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1em 0;
+}
+
+.footer div{
+    flex-basis: 23%;
+}
+
+.footer div header h3{
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.footer div ul li a{
+    color: #fff;
+}
+
+.footer p{
+    font-size: 0.9em;
+}
+
+.footer .first{
+    display: flex;
+    margin: 0 1px;
+}
+
+.footer .links i{
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 100px;
+    margin: 0 0.5em;
+}
+
+/* Blog */
+.our_blog{
+    margin: 2em 0;
+}
+.our_blog header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.our_blog header h2{
+    margin: 1em 0;
+    font-size: 2em;
+}
+
+.our_blog header p{
+    color: rgb(44, 44, 44);
+}
+
+.our_blog .blog_body{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    gap: 1em;
+}
+
+.our_blog .blog_body .blog_inner{
+    overflow: hidden;
+    width: 50%;
+    min-height: 100%;
+    box-shadow: 2px 4px 6px gray;
+}
+
+.our_blog .blog_body .blog_inner iframe{
+    width: 100%;
+    height: 50%;
+}
+
+.our_blog .blog_body .blog-image{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.our_blog .blog_body .blog-image1{
+    background-image: url('./Images/blog1.png');
+}
+
+.our_blog .blog_body .blog-image2{
+    background-image: url('./Images/blog2.png');
+}
+
+.our_blog .blog_body .blog-image3{
+    background-image: url('./Images/blog3.png');
+}
+
+.our_blog .blog_body p{
+    color: gold;
+    margin: 1em 0;
+}
+
+.our_blog .blog_body p.lorem{
+    color: rgb(44, 44, 44);
+}
+
+.contact_us{
+    margin: 2em 0;
+}
+
+.contact_us header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_us header h2{
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.contact_us header p{
+    width: 70%;
+    color: rgb(44, 44, 44);
+    margin: auto;
+}
+
+.contact_us .contact_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.contact_us .contact_body .contact_inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact_us .contact_body .contact_inner h3{
+    font-size: 1.2em;
+}
+
+.contact_us .contact_body .contact_inner i{
+    color: gold;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    text-align: center;
+    margin: auto;
+    border-radius: 100px;
+    font-size: 2em;
+    padding: 0.6em;
+    margin-bottom: 20px;
+}
+
+.half_sides{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.half_sides .img_box{
+    width: 100%;
+}
+
+.half_sides .img_box .img{
+    background-image: url('./Images/IMG-20240523-WA0003-removebg-preview.png');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.half_sides .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 1em 2em;
+    gap: 0.8em;
+    height: auto;
+}
+
+.half_sides .form input{
+    padding: 0.5em;
+}
+
+.half_sides .form input:focus, .half_sides .form textarea:focus{
+    outline: 2px solid gold;
+}
+
+.half_sides .form textarea{
+    resize: none;
+}
+
+.half_sides a{
+    background-color: gold;
+    color: #000;
+    width: 40%;
+    padding: 0.8em 1em;
+    border-radius: 100px;
+    text-align: center;
+    transition: display 0.3s ease-in-out;
+}
+
+.navBar{
+    display: none;
+}
+
+i.fa.fa-bars{
+    display: none;
+    font-size: 2em;
+}
+
+.open{
+    display: flex;
+}
+
+.my_skills header h1{
+    text-align: center;
+}
+
+.freelance{
+    display: flex;
+    flex-direction: column;
+}
+
+.freelance .boast{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.freelance .boast section{
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+    max-width: 150px;
+    min-width: 150px;
+    margin: 1em 0 0 0 ;
+    padding: 1em 1em;
+    border-radius: 4px;
+}
+
+.freelance .boast section h1{
+    color: gold;
+    font-size: 1.2em;
+}
+
+.freelance .boast section p{
+    font-size: 0.5em;
+}
+
+.freelance .bg-image{
+    width: 100%;
+}
+
+.freelance .bg-image .img{
+    background-image: url('./Images/blog4.png');
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
